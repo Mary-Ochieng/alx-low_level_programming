@@ -1,4 +1,5 @@
 # include "main.h"
+# if nder "main.h"
 /**
   *print_sign - print the sign of a number
   *@c; the number to be checked

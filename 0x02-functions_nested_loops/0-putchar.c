@@ -1,8 +1,11 @@
 # include "main.h"
 /**
   * main - Entry point
+  * writtenn by mary
   * return; always (0)
+  *
   */
+
 int main(void)
 
 {
