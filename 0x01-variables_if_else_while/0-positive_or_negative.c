@@ -9,6 +9,7 @@
   */
 int main(void)
 {
+	/* body of main function */
 int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;

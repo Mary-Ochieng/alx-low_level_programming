@@ -7,6 +7,7 @@
 int main(void)
 
 {
+	/* body of main function*/
 	int n = 97;
 
 	while (n <= 122)
