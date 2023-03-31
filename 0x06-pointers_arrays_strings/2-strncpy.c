@@ -1,10 +1,10 @@
-# include "main.h"
-
+#include "main.h"
 /**
  * _strncpy - copy a string
  * @dest: input value
  * @src: input value
  * @n: input value
+ *
  * Return: dest
  */
 char *_strncpy(char *dest, char *src, int n)
@@ -12,7 +12,7 @@ char *_strncpy(char *dest, char *src, int n)
 	int j;
 
 	j = 0;
-	while (j < n && src[j] != '\n')
+	while (j < n && src[j] != '\0')
 	{
 		dest[j] = src[j];
 		j++;
@@ -22,5 +22,6 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[j] = '\0';
 		j++;
 	}
+
 	return (dest);
 }
