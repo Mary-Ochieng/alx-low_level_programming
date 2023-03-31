@@ -1,37 +1,38 @@
-# include <stdio.h>
+#include <stdio.h>
 /**
-  * main - entry point
-  * description; 'prints all possible different combinations of three digits'
-  * return; always 0
-  */
+* main - Entry point
+*
+* Return: Always 0
+* date:05-06-2022
+*/
 
 int main(void)
 {
-	int i;
-	int j;
-	int k;
+  int i, j, k;
 
-	for (i = 0; i < 0; i++)
-	{
-		for (j = 1; j < 10; j++)
+  for (i = 48; i < 58; i++)
+  {
+    for (j = 49; j < 58; j++)
+    {
+	  for (k = 50; k < 58; k++)
+	  {
+	    if (k > j && j > i)
 		{
-			for (k = 2; k < 10; k++)
-			{
-				if (i < j && j < k)
-				{
-					putchar(i + '0');
-					putchar(j + '0');
-					putchar(k + '0');
-					putchar(',');
-					putchar(' ');
-				}
-			}
+		  putchar(i);
+		  putchar(j);
+		  putchar(k);
+
+          if (i != 55 || j != 56)
+          {
+			putchar(',');
+			putchar(' ');
+		  }
 		}
+	  }
 	}
-	putchar('\n');
-	return (0);
+ }
+
+  putchar('\n');
+
+  return (0);
 }
-
-
-
-

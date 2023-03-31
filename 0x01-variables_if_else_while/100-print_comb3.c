@@ -1,32 +1,28 @@
-# include <stdio.h>
+#include <stdio.h>
 /**
-  * main - Entry point
-  * Description; 'prints all possible different combinations of two digits'
-  * Return; always 0
-  */
-
+* main - program compilation begins from main
+* Description: Program to print all possible combinations of numbers with no two numbers same in pairing
+* author: mary ochieng
+* Return: 0 means success
+*/
 int main(void)
 {
-	int i;
-	int j;
+  int a, b;
 
-	for (i = 0; i < 10; i++)
-	{
-		for (j = 1; j < 10; j++)
-		{
-				putchar(i + '0');
-				putchar(j + '0');
-				for (j = 1; j < 10; j++)
-				{
-					if (i + j != 17);
-					{
+  for (a = 48; a <=57; a++)
+   {
+     for (b = 49; b <= 57; b++)
+     {
+       if ( a != b && b > a)
+       {
+         putchar(a);
+         putchar(b);
+         putchar(',');
+       }
+     }
+   }
 
-					putchar(',');
-					putchar(' ');
-					}
-				}
-		}
-	}
-	putchar('\n');
-	return (0);
+  putchar('\n');
+
+  return (0);
 }
