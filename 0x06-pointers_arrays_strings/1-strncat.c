@@ -9,10 +9,10 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i;
+        int i;
 	int j;
-
-	i = 0;
+	
+id 	i = 0;
 	while (dest[i] != '\0')
 	{i++;
         }
@@ -25,5 +25,5 @@ char *_strncat(char *dest, char *src, int n)
         }
 
         dest[i] = '\0';
-	return (dest);
+        return (dest);
 }
